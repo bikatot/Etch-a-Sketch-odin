@@ -1,5 +1,5 @@
-let a = 100;
-let b = 100;
+let a = 16;
+let b = 16;
 let grid = document.createElement("div");
 grid.setAttribute("id", "parent");
 grid.style.gridTemplateColumns = `repeat(${a}, 1fr)`;

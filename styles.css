@@ -14,3 +14,13 @@ body {
   border: solid 5px;
   align-self: center;
   }
+
+#newGridButton {
+  margin: 15px;
+  background-color: #3882f6;
+  border-radius: 5px;
+  color: #F9Faf8;
+  border: 0;
+  font-weight: 700;
+  padding: 8px 24px;
+}

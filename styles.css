@@ -13,14 +13,60 @@ body {
   grid-row-gap: 0px;
   border: solid 5px;
   align-self: center;
-  }
+}
 
-#newGridButton {
+#buttonContainer {
+  display: flex;
   margin: 15px;
+  gap: 20px;
+}
+
+button {
   background-color: #3882f6;
   border-radius: 5px;
   color: #F9Faf8;
-  border: 0;
+  border: 1;
   font-weight: 700;
-  padding: 8px 24px;
+  padding: 10px 30px;
+  font-size: 16px;
+}
+
+#classicMode {
+  color: white;
+  background-color: black;
+}
+
+#grayScaleMode {
+  background: linear-gradient( 90deg,white,black );
+}
+
+#rainbowMode{
+  color: black;
+  background-image:     linear-gradient(
+    to right, 
+    #E7484F,
+    #E7484F 16.65%,
+    #F68B1D 16.65%,
+    #F68B1D 33.3%,
+    #FCED00 33.3%,
+    #FCED00 49.95%,
+    #009E4F 49.95%,
+    #009E4F 66.6%,
+    #00AAC3 66.6%,
+    #00AAC3 83.25%,
+    #732982 83.25%,
+    #732982 100%,
+    #E7484F 100%
+  );
+}
+
+#rainbowMode:hover {
+  color: black;
+animation:slidebg 10s linear infinite;
+}
+
+@keyframes slidebg {
+  to {
+    background-position:100vw;
+  }
 }
